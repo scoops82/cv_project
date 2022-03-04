@@ -39,14 +39,14 @@
 	<meta property="og:url" content="/">
 	<meta property="og:title" content="Rupert Taylor's CV">
 	<meta property="og:description" content="Contact Rupert Taylor">
-	<meta property="og:image" content="intro-html/images/rupert-taylor-profile-photo.jpg">
+	<meta property="og:image" content="/images/rupert-taylor-profile-photo.jpg">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="/">
 	<meta property="twitter:title" content="Rupert Taylor's CV">
 	<meta property="twitter:description" content="Contact Rupert Taylor">
-	<meta property="twitter:image" content="intro-html/images/rupert-taylor-profile-photo.jpg">
+	<meta property="twitter:image" content="/images/rupert-taylor-profile-photo.jpg">
 </head>
 
 <body>
@@ -71,9 +71,10 @@
 				</select>
 				<label for="first_name">First Name</label>
 				<input type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="75"
-					autocomplete>
+					autocomplete="given-name">
 				<label for="surname">Surname</label>
-				<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="75" autocomplete>
+				<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="75"
+					autocomplete="family-name">
 			</div>
 			<div>
 				<label for="company">Company</label>
@@ -83,8 +84,8 @@
 
 			<div>
 				<label for="email">Your Email</label>
-				<input type="email" name="email" id="email" placeholder="your email" maxlength="150" autocomplete
-					required>
+				<input type="email" name="email" id="email" placeholder="your email" maxlength="150"
+					autocomplete="email" required>
 			</div>
 			<label for="message">Your Message</label>
 			<textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"
