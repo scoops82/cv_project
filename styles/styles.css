@@ -1,0 +1,61 @@
+.profile-list {
+  width: 30vw;
+  margin: auto;
+  line-height: 2.5;
+}
+dl dt {
+  /* background-color: #5f9be3; */
+  font-weight: bold;
+  float: left;
+}
+
+dd {
+  text-align: right;
+  /* float: right; */
+}
+
+.career time,
+.education time {
+  font-weight: bold;
+}
+
+.career-list,
+.education-list {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+.profile {
+  /* background-color: aqua; */
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.career {
+  /* background-color: aqua; */
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.education {
+  /* background-color: aqua; */
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.interests {
+  /* background-color: aqua; */
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.references {
+  /* background-color: aqua; */
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
