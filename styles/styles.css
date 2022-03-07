@@ -60,6 +60,9 @@ dd {
   text-align: left;
 }
 
+li {
+  margin-top: 1em;
+}
 .career time,
 .education time,
 strong {
@@ -89,7 +92,6 @@ strong {
 }
 .career {
   width: 50vw;
-  text-align: center;
   margin: auto;
 }
 
@@ -99,7 +101,6 @@ strong {
   padding-bottom: 2em;
 }
 .education {
-  text-align: center;
   width: 50vw;
   margin: auto;
 }
@@ -113,9 +114,8 @@ strong {
 }
 
 .interests {
-  text-align: center;
   width: 50vw;
-  margin: 2em auto;
+  margin: auto;
   line-height: 1.6;
   text-align: left;
 }
@@ -199,6 +199,7 @@ textarea {
 
 button[type="submit"] {
   font-size: 1.5rem;
+  font-weight: bold;
   background-color: #0bba9f;
   padding: 1em 2em;
   border-radius: 1em;
@@ -207,6 +208,7 @@ button[type="submit"] {
 
 button[type="reset"] {
   font-size: 1.5rem;
+  font-weight: bold;
   background-color: #bbb;
   padding: 1em 2em;
   border-radius: 1em;
