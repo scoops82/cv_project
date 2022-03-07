@@ -62,26 +62,38 @@
 		<h1>Contact Rupert</h1>
 	</header>
 	<main>
-		<p>To contact me, please either fill in the form below or email me at <a
-				href="mailto:rupert.taylor1982@gmail.com">rupert.taylor1982@gmail.com</a></p>
+		<div class="contact-intro">
+			<p>To contact me, please either fill in the form below or email me at <a
+					href="mailto:rupert.taylor1982@gmail.com">rupert.taylor1982@gmail.com</a></p>
+		</div>
 
 		<form netlify>
 			<div>
-				<label for="title">Title</label>
-				<select name="title" id="title">
-					<option value="">Title</option>
-					<option>Mr.</option>
-					<option>Mrs</option>
-					<option>Miss</option>
-					<option>Ms</option>
-					<option>Dr</option>
-				</select>
-				<label for="first_name">First Name</label>
-				<input type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="75"
-					autocomplete="given-name">
-				<label for="surname">Surname</label>
-				<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="75"
-					autocomplete="family-name">
+				<div class="title-select">
+					<label for="title">Title</label>
+					<select name="title" id="title">
+						<option value="">Title</option>
+						<option>Mr.</option>
+						<option>Mrs</option>
+						<option>Miss</option>
+						<option>Ms</option>
+						<option>Dr</option>
+					</select>
+				</div>
+
+				<div class="names-inputs">
+					<div class="first-name-input">
+						<label for="first_name">First Name</label>
+						<input type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="75"
+							autocomplete="given-name">
+					</div>
+					<div class="surname-input">
+						<label for="surname">Surname</label>
+						<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="75"
+							autocomplete="family-name">
+					</div>
+				</div>
+
 			</div>
 			<div>
 				<label for="company">Company</label>
@@ -97,7 +109,7 @@
 			<label for="message">Your Message</label>
 			<textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"
 				required></textarea>
-			<div>
+			<div class="buttons-area">
 				<button type="submit">Submit</button>
 				<button type="reset">Clear</button>
 			</div>

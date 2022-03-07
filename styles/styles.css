@@ -1,61 +1,212 @@
-.profile-list {
-  width: 30vw;
-  margin: auto;
-  line-height: 2.5;
+body {
+  background-color: #111;
+  color: #ddd;
+  font-family: "Hubballi", cursive;
+  font-size: 2.2rem;
 }
-dl dt {
-  /* background-color: #5f9be3; */
+nav a {
+  background-color: #0bba9f;
+  color: #111;
+  font-size: 3rem;
   font-weight: bold;
   float: left;
+  margin: 1em;
+  padding: 1.2em 2em;
+  border-radius: 5%;
+}
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+  text-decoration: underline #0bba9f;
+  /* border-bottom: 20px solid #0bba9f; */
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+.profile-photo {
+  display: inline-block;
+  vertical-align: top;
+  /* padding: 1em; */
+  width: 49%;
+  max-width: 250px;
+  margin: auto;
+}
+.profile-photo img {
+  border-radius: 50%;
+  border-color: #111;
+  border-width: 20px;
+  border-style: solid;
+}
+
+.profile-list {
+  display: inline-block;
+  width: 49%;
+  margin: auto;
+}
+dl dt {
+  font-weight: bold;
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-top: 1em;
 }
 
 dd {
-  text-align: right;
-  /* float: right; */
+  text-align: left;
 }
 
 .career time,
-.education time {
+.education time,
+strong {
   font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .career-list,
 .education-list {
   list-style-type: none;
   line-height: 1.6;
+  text-align: left;
 }
 
 .profile {
-  /* background-color: aqua; */
-  text-align: center;
   width: 50vw;
-  margin: auto;
+  text-align: center;
+  margin: 2em auto;
 }
 
+.career-outer {
+  background-color: #333;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 2px solid #0bba9f;
+  border-bottom: 2px solid #0bba9f;
+}
 .career {
-  /* background-color: aqua; */
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+}
+
+.education-outer {
+  border-bottom: 2px solid #0bba9f;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.education {
   text-align: center;
   width: 50vw;
   margin: auto;
 }
 
-.education {
-  /* background-color: aqua; */
-  text-align: center;
-  width: 50vw;
-  margin: auto;
+.interests-outer {
+  background-color: #333;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 2px solid #0bba9f;
+  border-bottom: 2px solid #0bba9f;
 }
 
 .interests {
-  /* background-color: aqua; */
   text-align: center;
   width: 50vw;
-  margin: auto;
+  margin: 2em auto;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .references {
-  /* background-color: aqua; */
+  text-align: center;
+  width: 50vw;
+  margin: 2em auto;
+  line-height: 1.6;
+  padding-bottom: 2em;
+}
+
+footer p a {
+  background-color: #0bba9f;
+  color: #111;
+  font-size: 3rem;
+  font-weight: bold;
+  float: right;
+  margin: 1em;
+  padding: 1.2em;
+  border-radius: 5%;
+}
+.contact-intro {
   text-align: center;
   width: 50vw;
   margin: auto;
+  margin-top: 2em;
+}
+form {
+  width: 50vw;
+  margin: auto;
+  background-color: #333;
+  border-style: solid;
+  border-color: #0bba9f;
+  border-radius: 2em;
+  padding: 1em 2em;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+select {
+  font-size: 1.5rem;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.first-name-input,
+.surname-input {
+  display: inline-block;
+  width: 49%;
+}
+
+.names-inputs input {
+  min-width: 90%;
+}
+input[type="email"],
+input[name="company"] {
+  min-width: 95%;
+}
+textarea {
+  font-size: 1.5rem;
+  min-height: 2em;
+  min-width: 95%;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+button[type="submit"] {
+  font-size: 1.5rem;
+  background-color: #0bba9f;
+  padding: 1em 2em;
+  border-radius: 1em;
+  margin: 2em 2em 0 2em;
+}
+
+button[type="reset"] {
+  font-size: 1.5rem;
+  background-color: #bbb;
+  padding: 1em 2em;
+  border-radius: 1em;
+  margin: 2em 2em 0 2em;
+}
+.buttons-area {
+  text-align: center;
 }
