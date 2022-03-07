@@ -171,6 +171,11 @@ input {
   border-radius: 1em;
 }
 
+.required::after {
+  content: "*";
+  color: red;
+}
+
 .first-name-input,
 .surname-input {
   display: inline-block;
