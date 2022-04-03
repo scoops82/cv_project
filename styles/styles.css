@@ -1,26 +1,36 @@
+:root {
+  --primary: #7f5af0;
+  --secondary: #72757e;
+  --tertiary: #2cb67d;
+  --headline: #fffffe;
+  --paragraph: #94a1b2;
+  --background1: #16161a;
+  --background2: #242629;
+}
+
 body {
-  background-color: #111;
-  color: #ddd;
+  background-color: var(--background1);
+  color: var(--paragraph);
   font-family: "Hubballi", cursive;
   font-size: 2.2rem;
 }
 nav a {
-  background-color: #0bba9f;
-  color: #111;
+  background-color: var(--primary);
+  color: var(--headline);
   font-size: 3rem;
   font-weight: bold;
-  float: left;
   margin: 1em;
   padding: 1.2em 2em;
   border-radius: 5%;
 }
 h1 {
+  color: var(--headline);
   font-size: 6rem;
   text-align: center;
   width: 50vw;
   margin: auto;
-  text-decoration: underline #0bba9f;
-  /* border-bottom: 20px solid #0bba9f; */
+  text-decoration: underline var(--tertiary);
+  /* border-bottom: 20px solid var(--tertiary); */
 }
 h2 {
   font-size: 4rem;
@@ -38,7 +48,7 @@ h2 {
 }
 .profile-photo img {
   border-radius: 50%;
-  border-color: #111;
+  border-color: var(--background2);
   border-width: 20px;
   border-style: solid;
 }
@@ -84,11 +94,11 @@ strong {
 }
 
 .career-outer {
-  background-color: #333;
+  background-color: var(--background2);
   padding-top: 2em;
   padding-bottom: 2em;
-  border-top: 2px solid #0bba9f;
-  border-bottom: 2px solid #0bba9f;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
 }
 .career {
   width: 50vw;
@@ -96,7 +106,7 @@ strong {
 }
 
 .education-outer {
-  border-bottom: 2px solid #0bba9f;
+  border-bottom: 2px solid var(--tertiary);
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -106,11 +116,11 @@ strong {
 }
 
 .interests-outer {
-  background-color: #333;
+  background-color: var(--background2);
   padding-top: 2em;
   padding-bottom: 2em;
-  border-top: 2px solid #0bba9f;
-  border-bottom: 2px solid #0bba9f;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
 }
 
 .interests {
@@ -129,8 +139,8 @@ strong {
 }
 
 footer p a {
-  background-color: #0bba9f;
-  color: #111;
+  background-color: var(--primary);
+  color: var(--headline);
   font-size: 3rem;
   font-weight: bold;
   float: right;
@@ -138,6 +148,7 @@ footer p a {
   padding: 1.2em;
   border-radius: 5%;
 }
+
 .contact-intro {
   text-align: center;
   width: 50vw;
@@ -149,7 +160,7 @@ form {
   margin: auto;
   background-color: #333;
   border-style: solid;
-  border-color: #0bba9f;
+  border-color: var(--tertiary);
   border-radius: 2em;
   padding: 1em 2em;
 }
@@ -200,7 +211,7 @@ textarea {
 button[type="submit"] {
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #0bba9f;
+  background-color: var(--primary);
   padding: 1em 2em;
   border-radius: 1em;
   margin: 2em 2em 0 2em;
@@ -209,7 +220,7 @@ button[type="submit"] {
 button[type="reset"] {
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #bbb;
+  background-color: var(--secondary);
   padding: 1em 2em;
   border-radius: 1em;
   margin: 2em 2em 0 2em;
