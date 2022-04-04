@@ -95,7 +95,8 @@ dt {
 }
 
 .career ol,
-.education ol {
+.education ol,
+.interests ul {
   list-style: none;
   margin-left: 0;
   display: flex;

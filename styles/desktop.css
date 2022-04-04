@@ -1,0 +1,37 @@
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile h2 {
+  width: 100%;
+}
+
+.profile img {
+  min-width: 50%;
+  max-height: 150px;
+}
+
+.profile-list {
+  max-width: 50%;
+}
+
+.career ol,
+.education ol,
+.interests ul {
+  justify-content: space-around;
+}
+
+.career-list > li,
+.education-list > li,
+.interests-list > li {
+  flex-basis: 300px;
+  margin-left: 10px;
+
+  max-height: 200px;
+}
+
+.interests-list > li {
+  min-height: 220px;
+}
