@@ -1,0 +1,159 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #7f5af0;
+    --secondary: #72757e;
+    --tertiary: #2cb67d;
+    --headline: #fffffe;
+    --paragraph: #94a1b2;
+    --background1: #16161a;
+    --background2: #242629;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: #3da9fc;
+    --secondary: #90b4ce;
+    --tertiary: #ef4565;
+    --headline: #094067;
+    --paragraph: #5f6c7b;
+    --background1: #fffffe;
+    --background2: #d8eefe;
+  }
+}
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--paragraph);
+}
+
+h2 {
+  color: var(--headline);
+  text-align: center;
+}
+
+header {
+  background-color: var(--background1);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  color: var(--headline);
+  padding: 1em;
+}
+
+header svg {
+  width: 1.5em;
+  height: auto;
+  vertical-align: -0.3em;
+  fill: var(--headline);
+}
+
+header svg:hover {
+  fill: var(--tertiary);
+}
+
+section {
+  padding: 1em;
+  text-align: center;
+}
+
+/* Profile Section */
+.profile {
+  background-color: var(--background2);
+}
+
+.profile img {
+  border-radius: 50%;
+  max-width: 33%;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+}
+
+dd {
+  flex-basis: 45%;
+  flex-grow: 2;
+  text-align: start;
+}
+
+dt {
+  flex-basis: 30%;
+  font-weight: 700;
+  text-align: end;
+}
+
+.email:hover {
+  color: var(--tertiary);
+}
+
+/* Career Section */
+.career {
+  background-color: var(--background1);
+}
+
+.career ol,
+.education ol {
+  list-style: none;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.career-list > li,
+.education-list > li,
+.interests-list > li {
+  width: 100%;
+  border-radius: 30px;
+  border-color: var(--primary);
+  border-style: solid;
+  margin-left: -20px;
+  margin-bottom: 15px;
+  padding: 1em;
+  height: 35vw;
+}
+
+.career-list > li {
+  background-color: var(--background2);
+}
+
+.career li:hover,
+.education li:hover {
+  border-color: var(--tertiary);
+}
+
+ol time {
+  font-weight: 700;
+}
+
+/* Education Section */
+.education {
+  background-color: var(--background2);
+}
+
+.education-list > li {
+  background-color: var(--background1);
+}
+
+/* Interests Section */
+.interests {
+  background-color: var(--background1);
+}
+
+.interests-list > li {
+  height: fit-content;
+  margin-left: auto;
+  background-color: var(--background2);
+}
+
+/* References Section */
+.references {
+  background-color: var(--background2);
+}
+
+footer {
+  background-color: var(--background1);
+}

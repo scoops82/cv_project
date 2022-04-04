@@ -1,0 +1,69 @@
+html {
+  background-color: var(--background1);
+}
+
+.contact-intro {
+  background-color: var(--background2);
+  padding: 2em 2em 1em;
+  text-align: center;
+}
+
+form {
+  margin: 1em auto;
+  width: 75%;
+  background-color: var(--background1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  margin-top: 1em;
+  font-weight: 700;
+  color: var(--headline);
+}
+
+select,
+input,
+textarea {
+  background-color: var(--background2);
+  color: var(--paragraph);
+  border-radius: 10px;
+  border-color: var(--background1);
+  padding: 1em;
+}
+
+.buttons-area {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  margin: 1em;
+  font-weight: 700;
+}
+
+button[type="submit"] {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--headline);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+button[type="reset"] {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--headline);
+}
+
+button[type="reset"]:hover {
+  background-color: var(--tertiary);
+  border-color: var(--tertiary);
+}

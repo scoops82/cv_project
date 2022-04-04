@@ -32,7 +32,7 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
 	<!-- Metatags -->
 	<!-- Primary Meta Tags -->
@@ -57,19 +57,24 @@
 	<!-- CSS Scripts -->
 	<link rel="stylesheet" href="/styles/normalize.css">
 	<link rel="stylesheet" href="/styles/generics.css">
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="/styles/base.css">
 
 </head>
 
 <body>
 	<header>
-		<nav>
-			<a href="contact.html">Contact Rupert</a>
-		</nav>
-		<h1>Rupert Taylor's CV</h1>
+
+		<h1>Rupert Taylor</h1>
+		<a href="/contact.html" class="contact-me"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+				class="contact-me">
+				<!--Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+				<path
+					d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+			</svg></a>
+
 	</header>
 	<main>
-		<div class="profile">
+		<section class="profile">
 			<h2>Personal Profile</h2>
 			<div class="profile-photo"><img src="/images/profile-pic.jpg" alt="Rupert Taylor profile photo" width="250">
 			</div>
@@ -84,90 +89,113 @@
 					<dt>Location: </dt>
 					<dd>Banbury, Oxfordshire</dd>
 					<dt>Email: </dt>
-					<dd>rupert.taylor1982@gmail.com</dd>
+					<dd><a class="email" href="mailto:rupert.taylor1982@gmail.com">rupert.taylor1982@gmail.com</a></dd>
 				</dl>
 			</div>
-		</div>
+		</section>
+		<section class="career" id="career">
 
-		<div class="career-outer">
-			<div class="career">
+			<h2>Career Summary</h2>
+			<ol class="career-list">
+				<li><time datetime="2013-01">Jan 2013</time> - <strong>Present</strong>
+					<ul>
+						<li><strong>Organisation:</strong> Dandelion Antiques</li>
+						<li><strong>Position:</strong> Co-Director</li>
+					</ul>
 
-				<h2>Career Summary</h2>
-				<ol class="career-list">
-					<li><time datetime="2013-01">Jan 2013</time> - <strong>Present</strong> -- Dandelion Antiques -
-						Co-Director</li>
-					<li><time datetime="2009-02">Feb 2009</time> - <time datetime="2011-08">August 2011</time> --
-						British
-						Council, Northern China - IELTS Speaking Examiner</li>
-					<li><time datetime="2008-09">Sept 2008</time> - <time datetime="2011-07">July 2011</time> --
-						Northeast
-						Normal University, Changchun, China - English Teacher
-					</li>
-					<li><time datetime="2004-11">Nov 2004</time> - <time datetime="2007-09">Sept 2007</time> -- EF
-						English
-						First, Changchun, China - (Senior) Teacher</li>
-				</ol>
-			</div>
-		</div>
+				</li>
+				<li><time datetime="2009-02">Feb 2009</time> - <time datetime="2011-08">August 2011</time>
+					<ul>
+						<li><strong>Organisation:</strong> British Council, Northern China</li>
+						<li><strong>Position:</strong> IELTS Speaking Examiner</li>
+					</ul>
 
-		<div class="education-outer">
-			<div class="education">
-				<h2>Education and Qualifications</h2>
-				<ol class="education-list">
-					<li><time datetime="2022-02">Feb 2022</time> - <time datetime="2022-09">Sept 2022</time> -- The Jump
-						-
-						Full-Stack Coding Bootcamp</li>
-					<li><time datetime="2014-09">Sept 2014</time> - <time datetime="2015-06">June 2015</time> -- Gem-A
-						(The
-						Gemmological Association of Great Britain) - Gemmology
-						Foundation</li>
-					<li><time datetime="2011-09">Sept 2011</time> - <time datetime="2012-06">June 2012</time> -- School
-						of
-						Oriental and African Studies, University of London - MA
-						Chinese Studies</li>
-					<li><time datetime="2007-09">Sept 2007</time> - <time datetime="2008-06">June 2008</time> --
-						Northeast
-						Normal University, Changchun, China - Chinese language
-						study</li>
-					<li><time datetime="2004-10">Oct 2004</time> - <time datetime="2004-11">Nov 2004</time> -- EF,
-						Sydney -
-						TEFL
-						Certificate</li>
-					<li><time datetime="2000-09">Sept 2000</time> - <time datetime="2003-07">July 2003</time> --
-						University
-						College London, University of London - BSc Molecular
-						Cell Biology</li>
-				</ol>
-			</div>
-		</div>
-		<div class="interests-outer">
-			<div class="interests">
-				<h2>Interests and Hobbies</h2>
-				<ul class="interests-list">
-					<li><strong>Computing and technology</strong> - Ever since my father bought an Amstrad when I was at
-						primary school, I
-						have
-						loved using and finding out about computers. More recently, with Dandelion Antiques, I have used
-						this
-						interest to automate as much of the business processes as I can as well as setting up a working
-						ecommerce website.</li>
-					<li><strong>Walking</strong> - I walk my dog everyday</li>
-					<li><strong>History</strong> - I am particularly interested in where this crosses over with
-						technology
-						and innovation.
-					</li>
-					<li>Finally I enjoy playing with my six-year-old daughter</li>
-				</ul>
-			</div>
-		</div>
-		<div class="references">
+				</li>
+				<li><time datetime="2008-09">Sept 2008</time> - <time datetime="2011-07">July 2011</time>
+					<ul>
+						<li><strong>Organisation:</strong> Northeast
+							Normal University, Changchun, China</li>
+						<li><strong>Position:</strong> English Teacher</li>
+					</ul>
+
+				</li>
+				<li><time datetime="2004-11">Nov 2004</time> - <time datetime="2007-09">Sept 2007</time>
+					<ul>
+						<li><strong>Organisation:</strong> EF English First, Changchun, China</li>
+						<li><strong>Position:</strong> (Senior) Teacher</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+
+		<section class="education" id="education">
+			<h2>Education and Qualifications</h2>
+			<ol class="education-list">
+				<li><time datetime="2022-02">Feb 2022</time> - <time datetime="2022-09">Sept 2022</time>
+					<ul>
+						<li><strong>Organisation:</strong> The Jump</li>
+						<li><strong>Course:</strong> Full-Stack Coding Bootcamp</li>
+					</ul>
+				</li>
+				<li><time datetime="2014-09">Sept 2014</time> - <time datetime="2015-06">June 2015</time>
+					<ul>
+						<li><strong>Organisation:</strong> Gem-A (The Gemmological Association of Great Britain)</li>
+						<li><strong>Course:</strong> Gemmology Foundation</li>
+					</ul>
+				</li>
+				<li><time datetime="2011-09">Sept 2011</time> - <time datetime="2012-06">June 2012</time>
+					<ul>
+						<li><strong>Organisation:</strong> School of Oriental and African Studies, University of London
+						</li>
+						<li><strong>Course:</strong> MA Chinese Studies</li>
+					</ul>
+				</li>
+				<li><time datetime="2007-09">Sept 2007</time> - <time datetime="2008-06">June 2008</time>
+					<ul>
+						<li><strong>Organisation:</strong> Northeast Normal University, Changchun, China</li>
+						<li><strong>Course:</strong> Chinese language study</li>
+					</ul>
+				</li>
+				<li><time datetime="2004-10">Oct 2004</time> - <time datetime="2004-11">Nov 2004</time>
+					<ul>
+						<li><strong>Organisation:</strong> EF, Sydney, Australia</li>
+						<li><strong>Course:</strong> TEFL Certificate</li>
+					</ul>
+				</li>
+				<li><time datetime="2000-09">Sept 2000</time> - <time datetime="2003-07">July 2003</time>
+					<ul>
+						<li><strong>Organisation:</strong> University College London, University of London</li>
+						<li><strong>Course:</strong> BSc Molecular Cell Biology</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+		<section class="interests" id="interests">
+			<h2>Interests and Hobbies</h2>
+			<ul class="interests-list">
+				<li><strong>Computing and technology</strong> - Ever since my father bought an Amstrad when I was at
+					primary school, I
+					have
+					loved using and finding out about computers. More recently, with Dandelion Antiques, I have used
+					this
+					interest to automate as much of the business processes as I can as well as setting up a working
+					ecommerce website.</li>
+				<li><strong>Walking</strong> - I walk my dog everyday</li>
+				<li><strong>History</strong> - I am particularly interested in where this crosses over with
+					technology
+					and innovation.
+				</li>
+				<li>Finally I enjoy playing with my six-year-old daughter</li>
+			</ul>
+		</section>
+		<section class="references" id="references">
 			<h2>References</h2>
 			<p>Available on request</p>
-		</div>
+		</section>
 
 	</main>
 	<footer>
-		<p><a href="contact.html">Contact Rupert</a></p>
+		<p><a href="contact.html">Contact Me</a></p>
 		<small>Copyright Rupert Taylor 2022</small>
 	</footer>
 </body>

@@ -49,63 +49,70 @@
 	<meta property="twitter:description" content="Contact Rupert Taylor">
 	<meta property="twitter:image" content="/images/profile-pic.jpg">
 
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 	<!-- CSS Scripts -->
 	<link rel="stylesheet" href="/styles/normalize.css">
 	<link rel="stylesheet" href="/styles/generics.css">
-	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/contact-page.css">
 
 </head>
 
 <body>
 	<header>
-		<nav><a href="/">Home</a></nav>
-		<h1>Contact Rupert</h1>
+
+		<h1>Contact Me</h1>
+		<nav><a href="/">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+					<!-- Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+					<path
+						d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z" />
+				</svg>
+			</a></nav>
 	</header>
 	<main>
 		<div class="contact-intro">
-			<p>To contact me, please either fill in the form below or email me at <a
+			<p>To contact me, please either fill in the form below or email me at <a class="email"
 					href="mailto:rupert.taylor1982@gmail.com">rupert.taylor1982@gmail.com</a></p>
 		</div>
 
 		<form netlify>
-			<div>
-				<div class="title-select">
-					<label for="title">Title</label>
-					<select name="title" id="title">
-						<option value="">Title</option>
-						<option>Mr.</option>
-						<option>Mrs</option>
-						<option>Miss</option>
-						<option>Ms</option>
-						<option>Dr</option>
-					</select>
-				</div>
 
-				<div class="names-inputs">
-					<div class="first-name-input">
-						<label for="first_name" class="required">First Name</label>
-						<input type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="75"
-							autocomplete="given-name" required>
-					</div>
-					<div class="surname-input">
-						<label for="surname" class="required">Surname</label>
-						<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="75"
-							autocomplete="family-name" required>
-					</div>
-				</div>
-
-			</div>
-			<div>
-				<label for="company">Company</label>
-				<input type="text" name="company" id="company" placeholder="Your company" maxlength="75">
-			</div>
+			<label for="title">Title</label>
+			<select name="title" id="title">
+				<option value="">Title</option>
+				<option>Mr.</option>
+				<option>Mrs</option>
+				<option>Miss</option>
+				<option>Ms</option>
+				<option>Dr</option>
+			</select>
 
 
-			<div>
-				<label for="email" class="required">Your Email</label>
-				<input type="email" name="email" id="email" placeholder="your email" maxlength="150"
-					autocomplete="email" required>
-			</div>
+
+			<label for="first_name" class="required">First Name</label>
+			<input type="text" name="first_name" id="first_name" placeholder="First Name" maxlength="75"
+				autocomplete="given-name" required>
+
+
+			<label for="surname" class="required">Surname</label>
+			<input type="text" name="surname" id="surname" placeholder="Surname" maxlength="75"
+				autocomplete="family-name" required>
+
+
+			<label for="company">Company</label>
+			<input type="text" name="company" id="company" placeholder="Your company" maxlength="75">
+
+
+
+
+			<label for="email" class="required">Your Email</label>
+			<input type="email" name="email" id="email" placeholder="your email" maxlength="150" autocomplete="email"
+				required>
+
 			<label for="message" class="required">Your Message</label>
 			<textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"
 				required></textarea>

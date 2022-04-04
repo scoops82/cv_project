@@ -1,11 +1,25 @@
-:root {
-  --primary: #7f5af0;
-  --secondary: #72757e;
-  --tertiary: #2cb67d;
-  --headline: #fffffe;
-  --paragraph: #94a1b2;
-  --background1: #16161a;
-  --background2: #242629;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #7f5af0;
+    --secondary: #72757e;
+    --tertiary: #2cb67d;
+    --headline: #fffffe;
+    --paragraph: #94a1b2;
+    --background1: #16161a;
+    --background2: #242629;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: #3da9fc;
+    --secondary: #90b4ce;
+    --tertiary: #ef4565;
+    --headline: #094067;
+    --paragraph: #5f6c7b;
+    --background1: #fffffe;
+    --background2: #d8eefe;
+  }
 }
 
 body {
@@ -14,23 +28,35 @@ body {
   font-family: "Hubballi", cursive;
   font-size: 2.2rem;
 }
-nav a {
-  background-color: var(--primary);
-  color: var(--headline);
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 1em;
-  padding: 1.2em 2em;
-  border-radius: 5%;
+
+header {
+  background-color: var(--background2);
 }
+
+.header-nav {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.header-nav > li {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.header-nav > li:hover {
+  color: var(--tertiary);
+}
+
 h1 {
   color: var(--headline);
   font-size: 6rem;
   text-align: center;
-  width: 50vw;
-  margin: auto;
-  text-decoration: underline var(--tertiary);
-  /* border-bottom: 20px solid var(--tertiary); */
+  width: 100%;
+  margin: auto auto 0 auto;
+  /* border-bottom: 2px solid var(--tertiary); */
 }
 h2 {
   font-size: 4rem;
@@ -48,9 +74,10 @@ h2 {
 }
 .profile-photo img {
   border-radius: 50%;
-  border-color: var(--background2);
-  border-width: 20px;
-  border-style: solid;
+  padding: 1em;
+  /* border-color: var(--background2); */
+  /* border-width: 20px; */
+  /* border-style: solid; */
 }
 
 .profile-list {
@@ -82,13 +109,23 @@ strong {
 
 .career-list,
 .education-list {
-  list-style-type: none;
-  line-height: 1.6;
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.career-list li,
+.education-list li {
+  width: 250px;
+  height: 300px;
+  padding: 1em;
+  border-radius: 25px;
+  border-color: var(--tertiary);
+  border-style: solid;
 }
 
 .profile {
-  width: 50vw;
+  width: 80vw;
   text-align: center;
   margin: 2em auto;
 }
@@ -101,7 +138,7 @@ strong {
   border-bottom: 2px solid var(--tertiary);
 }
 .career {
-  width: 50vw;
+  width: 80vw;
   margin: auto;
 }
 
@@ -111,7 +148,7 @@ strong {
   padding-bottom: 2em;
 }
 .education {
-  width: 50vw;
+  width: 80vw;
   margin: auto;
 }
 
